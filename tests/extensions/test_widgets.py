@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import Mock
 
-from maliang.extensions.wedgets import UnderlineButton, HighlightButton, IconButton, IconOnlyButton
+from maliang.extensions.widgets import UnderlineButton, HighlightButton, IconButton, IconOnlyButton
 
 
 class TestWidgetClasses(unittest.TestCase):
