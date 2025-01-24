@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maliang-extensions"
+description = "Some extensions for maliang."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "MuXue1230", email = "muxuetegong@gmail.com" }
+]
+maintainers = [
+    { name = "MuXue1230", email = "muxuetegong@gmail.com" }
+]
+keywords = [
+    "tkinter",
+    "gui",
+    "ui",
+    "cross-platform",
+    "themed",
+    "typed",
+    "lightweight",
+    "ui-design",
+    "modern-ui",
+    "custom",
+    "extensions"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Intended Audience :: Developers",
+    "Typing :: Typed",
+]
+dynamic = ["version"]
+dependencies = [
+    "maliang>=3.0.0rc6",
+    "typing-extensions"
+]
+
+[project.urls]
+"Bug tracker" = "https://github.com/TempAccountOfMuxue1230/maliang-extensions/issues"
+"Source code" = "https://github.com/TempAccountOfMuxue1230/maliang-extensions"
+
+[tool.setuptools.dynamic]
+version = { attr = "maliang_extensions.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["maliang_extensions*"]
+
+[tool.pylint]
+output-format = "colorized"
+reports = "y"
+fail-on = "E,F"
+fail-under = 9
+disable = 'line-too-long'
+
+[tool.pytest.ini_options]
+addopts = ["--color=yes", "--reruns=3"]
