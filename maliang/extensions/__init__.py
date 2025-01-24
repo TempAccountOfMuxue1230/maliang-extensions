@@ -35,3 +35,5 @@ If you ❤️ this package, please leave your ⭐ to us, thank you very much!
 __version__ = "0.1.0a1"
 __author__ = "MuXue1230"
 __license__ = "MIT"
+
+from .widgets import *
