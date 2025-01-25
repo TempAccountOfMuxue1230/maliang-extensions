@@ -32,8 +32,9 @@ If you ❤️ this package, please leave your ⭐ to us, thank you very much!
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-__version__ = "0.1.0a1"
+__version__ = "0.1.0a2"
 __author__ = "MuXue1230"
 __license__ = "MIT"
 
 from .widgets import *
+from .core import *
