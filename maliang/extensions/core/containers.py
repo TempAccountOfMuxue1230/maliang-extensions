@@ -16,7 +16,7 @@ __all__ = [
 import typing
 
 from maliang.core.containers import Canvas, Tk, Toplevel
-from .Configs import *
+from .config import *
 
 import maliang
 
