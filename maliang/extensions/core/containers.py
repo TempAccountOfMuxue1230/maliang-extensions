@@ -111,7 +111,7 @@ class PageCanvas(Canvas):
             text.append(page.name)
 
         maliang.SegmentedButton(canvas, (20, 140), sizes,
-                                text=tuple(text), command=self.call_canvas, layout="vertical")
+                                default=default, text=tuple(text), command=self.call_canvas, layout="vertical")
 
     def call_canvas(self, index: int) -> None:
         """"""

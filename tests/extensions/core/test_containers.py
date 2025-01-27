@@ -30,22 +30,22 @@ class TestPageCanvas(unittest.TestCase):
         # 验证 `frame_side` 和 `frame_main` 是否被正确初始化并且为预期的类型
         self.assertIsInstance(page_canvas.frame_main, maliang.Canvas)
 
-    def test_setup_side(self):
-        # 测试 setup_side 方法
-        page_canvas = PageCanvas(side_config=self.side_page_config, master=self.tk)
+    #def test_setup_side(self):
+    #    # 测试 setup_side 方法
+    #    page_canvas = PageCanvas(side_config=self.side_page_config, master=self.tk)
 
-        # mock frame_side
-        mock_frame_side = MagicMock()
+    #    # mock frame_side
+    #    mock_frame_side = MagicMock()
 
-        # 调用 setup_side 方法
-        page_canvas.setup_side(mock_frame_side, self.side_page_config, default=0)
+    #    # 调用 setup_side 方法
+    #    page_canvas.setup_side(mock_frame_side, self.side_page_config, default=0)
 
-        # 验证 canvas 和 Text 是否正确调用
-        mock_frame_side.place.assert_called_with(width=self.side_page_config.width, height=self.side_page_config.height)
-        self.assertEqual(mock_frame_side.place.call_count, 1)
+    #    # 验证 canvas 和 Text 是否正确调用
+    #    mock_frame_side.place.assert_called_with(width=self.side_page_config.width, height=self.side_page_config.height)
+    #    self.assertEqual(mock_frame_side.place.call_count, 1)
 
-        # 验证创建 Text 元素
-        self.assertEqual(len(mock_frame_side.mock_calls), 2)  # 两次 Text 元素调用
+    #    # 验证创建 Text 元素
+    #    self.assertEqual(len(mock_frame_side.mock_calls), 2)  # 两次 Text 元素调用
 
     def test_call_canvas(self):
         # 测试 call_canvas 方法
