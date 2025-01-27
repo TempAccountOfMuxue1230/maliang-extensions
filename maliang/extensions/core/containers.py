@@ -10,40 +10,15 @@ container carrier.
 from __future__ import annotations
 
 __all__ = [
-    'SidePageConfig',
-    'SidePage',
-    'FontConfig',
     'PageCanvas',
 ]
 
 import typing
 
 from maliang.core.containers import Canvas, Tk, Toplevel
+from .Configs import *
 
 import maliang
-
-
-class FontConfig(typing.NamedTuple):
-    text: str
-    size: int
-
-
-class SidePage(typing.NamedTuple):
-    name: str
-
-    cav: typing.Type[Canvas]
-
-
-class SidePageConfig(typing.NamedTuple):
-    """
-    Side page configuration.
-    """
-    width: int
-    height: int
-    side_pages: list[SidePage]
-    side_button_height: int
-    title: FontConfig
-    subtitle: FontConfig
 
 
 class PageCanvas(Canvas):
