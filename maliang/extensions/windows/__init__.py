@@ -1,1 +1,1 @@
-from .LoginWindow import *
+from .login import *
