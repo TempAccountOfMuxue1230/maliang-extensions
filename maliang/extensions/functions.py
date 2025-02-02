@@ -17,9 +17,9 @@ def get_exit_ask_function_with_sth(root_window: ml.Tk, title: str="退出", mess
 
     def exit_ask():
         if messagebox.askyesno(title, message):
-            function(root_win, True)
+            func(root_win, True)
             root_win.destroy()
             return
-        function(root_win, True)
+        func(root_win, True)
 
     return exit_ask
