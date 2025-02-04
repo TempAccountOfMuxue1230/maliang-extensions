@@ -32,7 +32,7 @@ If you ❤️ this package, please leave your ⭐ to us, thank you very much!
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-__version__ = "0.1.1b1"
+__version__ = "0.1.1"
 __author__ = "MuXue1230"
 __license__ = "MIT"
 
