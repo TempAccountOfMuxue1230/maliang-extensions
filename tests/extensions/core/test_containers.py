@@ -1,6 +1,6 @@
 import unittest
-from unittest.mock import MagicMock, Mock
-from maliang.core.containers import Canvas, Tk
+from unittest.mock import MagicMock
+from maliang.core.containers import Tk
 from maliang.extensions import FontConfig, SidePage, SidePageConfig, PageCanvas
 import maliang
 
